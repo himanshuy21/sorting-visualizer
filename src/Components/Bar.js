@@ -6,8 +6,8 @@ export default function Bar({ index, length, color, changeArray }) {
   const [len, setLen] = useState(length);
 
   useEffect(() => {
-    setLen(len);
-  }, [len]);
+    setLen(length);
+  }, [length]);
   // const barstyle = {
   //   height: length,
   //  this adding more height to the bar that's why
@@ -33,11 +33,6 @@ export default function Bar({ index, length, color, changeArray }) {
     transistion: "0.3s",
   };
 
-  const right = {
-    height: `${length}px`,
-    transfrom: `translateY(${200 - length}px)`,
-    backgroundColor: `${colors[color][0]}`,
-  };
   const front_back_right_left = {
     height: `${length}px`,
     transform: `translateY(${200 - length}px)`,
