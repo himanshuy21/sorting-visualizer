@@ -1,5 +1,8 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .frame {
@@ -52,5 +55,10 @@
   align-items: center;
 }
 
-/* .pannel {
-} */
+.pannel {
+  width: 50%;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
